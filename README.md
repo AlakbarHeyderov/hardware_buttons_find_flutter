@@ -1,4 +1,3 @@
-![Scheme](example/assets/device.jpeg)
 
 <h2 align="center">
 Hardware Buttons Find Flutter
@@ -13,7 +12,9 @@ It is necessary to learn the feedback of buttons on different types of reading d
 
 
 --------
+<img src="https://raw.githubusercontent.com/AlakbarHeyderov/hardware_buttons_find_flutter/main/example/assets/device.jpeg"  width="500" height="500" alt="logo" />
 
+--------
 ## How to use it
 
 ```dart

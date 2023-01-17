@@ -1,7 +1,7 @@
 name: hardware_buttons_find_flutter
 description: On mobile devices with different buttons on it, listening for the name of the button when the buttons are pressed.
-version: 0.0.1
-homepage:
+version: 0.0.4
+homepage: https://github.com/AlakbarHeyderov/hardware_buttons_find_flutter
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
