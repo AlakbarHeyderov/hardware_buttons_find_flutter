@@ -1,4 +1,4 @@
-![Scheme](example/assets/device.jpeg)
+![Scheme](example/assets/device.jpeg =100x20)
 
 <h2 align="center">
 Hardware Buttons Find Flutter
