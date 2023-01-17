@@ -14,12 +14,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String? _latestHardwareButtonEvent;
 
-  StreamSubscription<String>? _volumeButtonSubscription;
+  StreamSubscription<String>? _buttonSubscription;
 
   @override
   void initState() {
     super.initState();
-    _volumeButtonSubscription = HardwareButtons.buttonEvents?.listen((event) {
+    _buttonSubscription = HardwareButtons.buttonEvents?.listen((event) {
       setState(() {
         _latestHardwareButtonEvent = event.toString();
       });
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void dispose() {
     super.dispose();
-    _volumeButtonSubscription?.cancel();
+    _buttonSubscription?.cancel();
   }
 
   @override
@@ -37,13 +37,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Hardware buttons find'),
         ),
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Text('Value: $_latestHardwareButtonEvent\n'),
+              Text('Button name: $_latestHardwareButtonEvent\n'),
             ],
           ),
         ),
